@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--header-height: 101px;">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us - Continental Real Estate</title>
+  <title>Login - Continental Real Estate</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
     * { box-sizing: border-box; }
     body { font-family: 'Urbanist', sans-serif; background: #000; color: #fff; margin: 0; }
     .nav-link:hover { color: #f7c83d; }
+    input:focus { outline: none; border-color: #f7c83d; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col bg-black">
 
-  <!-- TOP BAR -->
-  <div class="w-full bg-black/60 text-white text-xs py-1.5 px-6 md:px-20 border-b border-white/10 flex justify-between items-center">
-    <span>+971 58 108 2022 | info@continental.com</span>
-    <span class="hidden sm:block">✨ Discover Your Dream Property with Continental  Learn More</span>
-    <select class="bg-transparent border border-white/30 text-white text-xs px-2 py-0.5 rounded focus:outline-none cursor-pointer">
-      <option value="en" class="bg-black">English</option>
-      <option value="ar" class="bg-black">العربية</option>
-      <option value="fr" class="bg-black">Français</option>
-    </select>
-  </div>
+  
 
-  <!-- NAVBAR -->
-  <nav class="w-full bg-transparent px-6 md:px-20 h-[60px] flex items-center justify-between text-gray-400 border-b border-white/10">
-    <a href="index.html">
-      <svg width="42" height="36" viewBox="0 0 42 36" fill="none">
-        <rect x="4" y="18" width="6" height="18" fill="#f7c83d"/>
-        <rect x="12" y="10" width="6" height="26" fill="#f7c83d"/>
-        <rect x="20" y="4" width="6" height="32" fill="#f7c83d"/>
-        <rect x="28" y="10" width="6" height="26" fill="#f7c83d"/>
-        <rect x="36" y="18" width="6" height="18" fill="#f7c83d"/>
-      </svg>
-    </a>
-    <div class="flex items-center gap-2 md:gap-6">
-      <a href="index.html" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Home</a>
-      <a href="about.html" class="bg-[#f7c83d] text-black font-semibold px-5 py-2 rounded-md text-sm">About Us</a>
-      <a href="#" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Properties</a>
-      <a href="login.html" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Log In</a>
-    </div>
-  </nav>
+  <header class="fixed top-0 left-0 w-full z-50 flex flex-col bg-transparent " style="opacity: 1; transform: none;">
+      <div
+        class="w-full text-white text-xs sm:text-sm py-1 sm:py-1.5 px-6 sm:px-12 lg:px-20 border-b border-white/10 bg-black/30 bg-cover bg-center "
+        style="background-image: url(&quot;/Images/Abstract Design.png&quot;);">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-4 sm:gap-8">
+          <div class="flex-1 text-left font-poppins truncate min-w-[150px]">+971 58 108 2022| info@continental.com</div>
+          <div class="hidden sm:flex flex-2 justify-center font-inter font-medium text-center truncate px-6">✨ Discover
+            Your Dream Property with Continental Learn More</div>
+          <div class="flex-1 text-right min-w-[100px]"><select
+              class="bg-transparent border border-white/40 text-white text-xs sm:text-sm px-3 py-1 rounded focus:outline-none cursor-pointer">
+              <option value="en" class="bg-black text-white">English</option>
+              <option value="fr" class="bg-black text-white">Français</option>
+              <option value="ar" class="bg-black text-white">العربية</option>
+            </select></div>
+        </div>
+      </div>
+      <nav
+        class="w-full bg-transparent h-[60px] px-6 sm:px-12 lg:px-20 flex items-center justify-between text-[#919191] pt-1">
+        <a href="index.html">
+  <!-- <img alt="Logo" src="images/Logo.svg" class="w-[55px] h-[47px] object-contain"> -->
+</a>
 
+        <div class="hidden md:flex items-center space-x-10"> 
+            <a href="index.html" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Home</a>
+
+</a>
+          <a href="about.html" class="bg-[#f7c83d] text-black font-semibold px-5 py-2 rounded-md text-sm">About Us</a>
+  <a href="#" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Properties</a>
+  <a href="login.html" class="nav-link text-gray-300 text-sm font-medium px-3 py-1.5 rounded-md hover:text-[#f7c83d] transition-colors">Log In</a>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg></button>
+      </nav>
+    </header>
   <!-- MAIN CONTENT -->
   <main class="flex-1 px-6 md:px-20 py-16 bg-[#0d0d0d]">
 
